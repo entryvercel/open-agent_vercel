@@ -161,6 +161,14 @@ export function isBuiltInVariant(variantId: string): boolean {
 
 export const BUILT_IN_VARIANTS: ModelVariant[] = [
   {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-5.5`,
+    name: "GPT-5.5",
+    baseModelId: "openai/gpt-5.5",
+    providerOptions: {
+      reasoningEffort: "medium",
+    },
+  },
+  {
     id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-5.4-xhigh`,
     name: "GPT-5.4 (XHigh)",
     baseModelId: "openai/gpt-5.4",
@@ -168,6 +176,54 @@ export const BUILT_IN_VARIANTS: ModelVariant[] = [
       reasoningEffort: "xhigh",
       reasoningSummary: "auto",
     },
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-4o`,
+    name: "GPT-4o",
+    baseModelId: "openai/gpt-4o",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-4o-mini`,
+    name: "GPT-4o Mini",
+    baseModelId: "openai/gpt-4o-mini",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}o1`,
+    name: "o1",
+    baseModelId: "openai/o1",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}o1-mini`,
+    name: "o1-mini",
+    baseModelId: "openai/o1-mini",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}o3-mini`,
+    name: "o3-mini",
+    baseModelId: "openai/o3-mini",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-4`,
+    name: "GPT-4",
+    baseModelId: "openai/gpt-4",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-4-turbo`,
+    name: "GPT-4 Turbo",
+    baseModelId: "openai/gpt-4-turbo",
+    providerOptions: {},
+  },
+  {
+    id: `${BUILT_IN_VARIANT_ID_PREFIX}gpt-3.5-turbo`,
+    name: "GPT-3.5 Turbo",
+    baseModelId: "openai/gpt-3.5-turbo",
+    providerOptions: {},
   },
   {
     id: `${BUILT_IN_VARIANT_ID_PREFIX}claude-opus-4.6-high`,

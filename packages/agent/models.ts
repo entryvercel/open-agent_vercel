@@ -107,7 +107,11 @@ export interface Gateway {
 export type { GatewayModelId, LanguageModel, JSONValue };
 
 export function shouldApplyOpenAIReasoningDefaults(modelId: string): boolean {
-  return modelId.startsWith("openai/gpt-5");
+  return (
+    modelId.startsWith("openai/gpt-5") ||
+    modelId.startsWith("openai/o1") ||
+    modelId.startsWith("openai/o3")
+  );
 }
 
 function shouldApplyOpenAITextVerbosityDefaults(modelId: string): boolean {
